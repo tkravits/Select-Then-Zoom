@@ -5,7 +5,7 @@ mxd = arcpy.mapping.MapDocument("CURRENT")
 # df is the dataframe, Layers is used to run through all the layers within the mxd. Leave Layers as is
 df = arcpy.mapping.ListDataFrames(mxd, "Layers")[0]
 # lyr sets the layer, needs to be spelt exactly as the layer sits in ArcMap
-lyr = arcpy.mapping.ListLayers(mxd, "BOCO.PARCELS.PARCELS", df)[0]
+lyr = arcpy.mapping.ListLayers(mxd, "BOGO.PARCELS.PARCELS", df)[0]
 arcpy.env.overwriteOutput = True
 
 # sets the parameters, this must be setup in the toolbox script
